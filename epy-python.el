@@ -126,11 +126,12 @@ The CMDLINE should be something like:
 
 
      ;; when we swich on the command line, switch in Emacs
-     (desktop-save-mode 1)
+     ;; (desktop-save-mode 1)
      (defun workon-postactivate (virtualenv)
        (require 'virtualenv)
        (virtualenv-activate virtualenv)
-       (desktop-change-dir virtualenv))
+       ;; (desktop-change-dir virtualenv)
+       )
 
      
      )
